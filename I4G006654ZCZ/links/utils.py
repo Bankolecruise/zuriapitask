@@ -1,5 +1,6 @@
 from uuid import uuid4
 
+
 def generate_random_id() -> str:
     """
     A function that generates a random 8 character string.

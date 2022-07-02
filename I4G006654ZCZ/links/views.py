@@ -6,27 +6,27 @@ from .models import Link
 from .serializers import LinkSerializer
 
 
-class PostListAPI(ListAPIView):
+class PostListApi(ListAPIView):
     queryset = Link.objects.filter(active=True)
     serializer_class = LinkSerializer
 
 
-class PostCreateAPI(CreateAPIView):
+class PostCreateApi(CreateAPIView):
     queryset = Link.objects.filter(active=True)
     serializer_class = LinkSerializer
 
 
-class PostUpdateAPI(UpdateAPIView):
+class PostUpdateApi(UpdateAPIView):
     queryset = Link.objects.filter(active=True)
     serializer_class = LinkSerializer
 
 
-class PostDetailAPI(RetrieveAPIView):
+class PostDetailApi(RetrieveAPIView):
     queryset = Link.objects.filter(active=True)
     serializer_class = LinkSerializer
 
 
-class PostDeleteAPI(DestroyAPIView):
+class PostDeleteApi(DestroyAPIView):
     queryset = Link.objects.filter(active=True)
     serializer_class = LinkSerializer
 
